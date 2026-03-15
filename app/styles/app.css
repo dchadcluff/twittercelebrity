@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-black: #0a0a0f;
+  --color-cyber-dark: #12121a;
+  --color-cyber-panel: #1a1a2e;
+  --color-cyber-surface: #16213e;
+
+  --color-neon-cyan: #00f5ff;
+  --color-neon-cyan-dim: #00b8c4;
+  --color-neon-pink: #ff006e;
+  --color-neon-pink-dim: #cc0058;
+  --color-neon-yellow: #f5e642;
+  --color-neon-purple: #bf00ff;
+
+  --font-cyber: "Rajdhani", "Orbitron", ui-monospace, monospace;
+
+  --color-cyber-text: #e2e8f0;
+  --color-cyber-muted: #94a3b8;
+}
+
+body {
+  background-color: var(--color-cyber-black);
+  color: var(--color-cyber-text);
+  font-family: var(--font-cyber);
+}
