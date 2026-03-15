@@ -91,37 +91,37 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CARD-01 | — | Pending |
-| CARD-02 | — | Pending |
-| CARD-03 | — | Pending |
-| CARD-04 | — | Pending |
-| CARD-05 | — | Pending |
-| CARD-06 | — | Pending |
-| CARD-07 | — | Pending |
-| CARD-08 | — | Pending |
-| REVL-01 | — | Pending |
-| REVL-02 | — | Pending |
-| REVL-03 | — | Pending |
-| REVL-04 | — | Pending |
-| REVL-05 | — | Pending |
-| REVL-06 | — | Pending |
-| POST-01 | — | Pending |
-| POST-02 | — | Pending |
-| POST-03 | — | Pending |
-| POST-04 | — | Pending |
-| DESG-01 | — | Pending |
-| DESG-02 | — | Pending |
-| DESG-03 | — | Pending |
-| DESG-04 | — | Pending |
-| INFR-01 | — | Pending |
-| INFR-02 | — | Pending |
-| INFR-03 | — | Pending |
+| CARD-01 | Phase 2 | Pending |
+| CARD-02 | Phase 2 | Pending |
+| CARD-03 | Phase 2 | Pending |
+| CARD-04 | Phase 2 | Pending |
+| CARD-05 | Phase 2 | Pending |
+| CARD-06 | Phase 2 | Pending |
+| CARD-07 | Phase 1 | Pending |
+| CARD-08 | Phase 1 | Pending |
+| REVL-01 | Phase 3 | Pending |
+| REVL-02 | Phase 3 | Pending |
+| REVL-03 | Phase 3 | Pending |
+| REVL-04 | Phase 3 | Pending |
+| REVL-05 | Phase 3 | Pending |
+| REVL-06 | Phase 3 | Pending |
+| POST-01 | Phase 3 | Pending |
+| POST-02 | Phase 3 | Pending |
+| POST-03 | Phase 3 | Pending |
+| POST-04 | Phase 3 | Pending |
+| DESG-01 | Phase 1 | Pending |
+| DESG-02 | Phase 4 | Pending |
+| DESG-03 | Phase 4 | Pending |
+| DESG-04 | Phase 2 | Pending |
+| INFR-01 | Phase 1 | Pending |
+| INFR-02 | Phase 1 | Pending |
+| INFR-03 | Phase 1 | Pending |
 
 **Coverage:**
 - v1 requirements: 25 total
-- Mapped to phases: 0
-- Unmapped: 25 ⚠️
+- Mapped to phases: 25
+- Unmapped: 0 ✓
 
 ---
 *Requirements defined: 2026-03-15*
-*Last updated: 2026-03-15 after initial definition*
+*Last updated: 2026-03-15 after roadmap creation*
