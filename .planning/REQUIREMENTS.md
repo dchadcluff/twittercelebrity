@@ -1,0 +1,127 @@
+# Requirements: Twitter Celebrity
+
+**Defined:** 2026-03-15
+**Core Value:** The reveal moment — when all other celebrities are dismissed and @chadcluff dramatically takes center stage — must feel like an event.
+
+## v1 Requirements
+
+Requirements for initial release. Each maps to roadmap phases.
+
+### Card Game
+
+- [ ] **CARD-01**: User sees a grid of ~15-20 celebrity cards on page load
+- [ ] **CARD-02**: Each card displays profile photo, @handle, display name, bio snippet, and follower count
+- [ ] **CARD-03**: User can dismiss a card by tapping the X button in the corner
+- [ ] **CARD-04**: User can dismiss a card by swiping it away on touch devices
+- [ ] **CARD-05**: Cards tilt during swipe drag for tactile feedback
+- [ ] **CARD-06**: Cards animate in with staggered entry on page load
+- [ ] **CARD-07**: Celebrity mix includes Elon Musk, entertainers, and athletes — no political figures
+- [ ] **CARD-08**: Celebrity data is hardcoded with local images (not CDN hotlinks)
+
+### Reveal
+
+- [ ] **REVL-01**: When all non-chadcluff cards are dismissed, dramatic reveal sequence begins
+- [ ] **REVL-02**: Remaining cards fly away in staggered exit animation
+- [ ] **REVL-03**: Deliberate pause between card exits and @chadcluff entrance
+- [ ] **REVL-04**: @chadcluff card grows into center stage with hero treatment
+- [ ] **REVL-05**: Confetti burst fires during reveal via canvas-confetti
+- [ ] **REVL-06**: Neon spotlight/glow effect highlights the hero card
+
+### Post-Reveal
+
+- [ ] **POST-01**: Follow @chadcluff CTA button links to Twitter/X profile
+- [ ] **POST-02**: Share on X button generates pre-filled tweet via Web Intent
+- [ ] **POST-03**: Replay button resets game and shuffles card order
+- [ ] **POST-04**: Witty bio/tagline section displays on the hero screen
+
+### Visual Design
+
+- [ ] **DESG-01**: Cyberpunk dark theme with neon color palette (cyan, pink, yellow)
+- [ ] **DESG-02**: CSS glitch effects on text and key elements
+- [ ] **DESG-03**: Neon glow box-shadows on cards and interactive elements
+- [ ] **DESG-04**: Responsive layout works on mobile and desktop
+
+### Infrastructure
+
+- [ ] **INFR-01**: React Router 7 SPA deployed to Cloudflare Pages
+- [ ] **INFR-02**: SPA routing works on direct URL access (/_redirects configured)
+- [ ] **INFR-03**: Site serves at twittercelebrity.com
+
+## v2 Requirements
+
+Deferred to future release. Tracked but not in current roadmap.
+
+### Personalization
+
+- **PERS-01**: Detect visitor's Twitter/X identity via cookies or OAuth
+- **PERS-02**: Include people the visitor follows in the celebrity deck
+- **PERS-03**: Mention visitor by name during or after the reveal
+
+### Audio
+
+- **AUDX-01**: Sound effects during card dismiss
+- **AUDX-02**: Dramatic audio cue during reveal sequence
+- **AUDX-03**: Background ambient audio
+
+### Accessibility
+
+- **ACCS-01**: prefers-reduced-motion disables or simplifies all animations
+- **ACCS-02**: Screen reader announces card dismiss and reveal events
+
+### Data
+
+- **DATA-01**: Automated script to refresh celebrity data periodically
+- **DATA-02**: CI pipeline to rebuild and deploy after data refresh
+
+## Out of Scope
+
+| Feature | Reason |
+|---------|--------|
+| Twitter/X OAuth login | Complexity doesn't justify v1 value |
+| Real-time Twitter API calls | Static data sufficient; avoids costs and rate limits |
+| Backend server | Cloudflare Pages free tier is static only |
+| Political figures in deck | Keep it fun and non-controversial |
+| Mobile native app | Web-first, static site |
+| Real-time multiplayer | Single-player experience |
+| User accounts / persistence | No backend, no need |
+
+## Traceability
+
+Which phases cover which requirements. Updated during roadmap creation.
+
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| CARD-01 | — | Pending |
+| CARD-02 | — | Pending |
+| CARD-03 | — | Pending |
+| CARD-04 | — | Pending |
+| CARD-05 | — | Pending |
+| CARD-06 | — | Pending |
+| CARD-07 | — | Pending |
+| CARD-08 | — | Pending |
+| REVL-01 | — | Pending |
+| REVL-02 | — | Pending |
+| REVL-03 | — | Pending |
+| REVL-04 | — | Pending |
+| REVL-05 | — | Pending |
+| REVL-06 | — | Pending |
+| POST-01 | — | Pending |
+| POST-02 | — | Pending |
+| POST-03 | — | Pending |
+| POST-04 | — | Pending |
+| DESG-01 | — | Pending |
+| DESG-02 | — | Pending |
+| DESG-03 | — | Pending |
+| DESG-04 | — | Pending |
+| INFR-01 | — | Pending |
+| INFR-02 | — | Pending |
+| INFR-03 | — | Pending |
+
+**Coverage:**
+- v1 requirements: 25 total
+- Mapped to phases: 0
+- Unmapped: 25 ⚠️
+
+---
+*Requirements defined: 2026-03-15*
+*Last updated: 2026-03-15 after initial definition*
