@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-16T01:17:52.983Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-16T01:21:00.093Z"
 last_activity: "2026-03-16 — Plan 01-02 complete: RR7 SPA deployed to Cloudflare Pages, twittercelebrity.com live, SPA routing verified"
 progress:
   total_phases: 4
   completed_phases: 1
   total_plans: 5
-  completed_plans: 3
+  completed_plans: 4
   percent: 25
 ---
 
@@ -51,6 +51,7 @@ Progress: [██░░░░░░░░] 25%
 
 *Updated after each plan completion*
 | Phase 02-card-game-mechanics P01 | 2 | 2 tasks | 7 files |
+| Phase 02-card-game-mechanics P02 | 5 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,8 @@ Recent decisions affecting current work:
 - [Phase 02-card-game-mechanics]: gameReducer uses Set<string> for dismissed IDs — O(1) lookup, immutable copy per action
 - [Phase 02-card-game-mechanics]: initializeGame places CHADCLUFF at end of shuffled array — guaranteed last position
 - [Phase 02-card-game-mechanics]: vitest environment set to jsdom globally — supports future React component tests
+- [Phase 02-card-game-mechanics]: Framer Motion layout+exit coexist on same motion.div in FM 12 without nested wrapper
+- [Phase 02-card-game-mechanics]: React.memo wraps CelebrityCard — prevents full list re-renders on each dismiss
 
 ### Pending Todos
 
@@ -83,6 +86,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-16T01:17:52.981Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-16T01:21:00.091Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None

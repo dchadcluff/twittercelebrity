@@ -44,7 +44,7 @@ Plans:
   3. Swiping a card on a touch device (tested on real iOS or Android) dismisses it; the card tilts during drag providing tactile feedback
   4. Cards animate in with a staggered entry on page load (not all appearing simultaneously)
   5. The layout is usable and visually correct at both 375px mobile width and 1280px desktop width
-**Plans:** 1/3 plans executed
+**Plans:** 2/3 plans executed
 
 Plans:
 - [ ] 02-01-PLAN.md — Install framer-motion, create game state reducer with tests, build StickyHeader and InstructionHint components
@@ -81,6 +81,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
-| 2. Card Game Mechanics | 1/3 | In Progress|  |
+| 2. Card Game Mechanics | 2/3 | In Progress|  |
 | 3. Reveal and Post-Reveal | 0/TBD | Not started | - |
 | 4. Polish and Launch | 0/TBD | Not started | - |
