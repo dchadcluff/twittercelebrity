@@ -81,6 +81,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
-| 2. Card Game Mechanics | 3/3 | Complete   | 2026-03-16 |
+| 2. Card Game Mechanics | 3/3 | Complete    | 2026-03-16 |
 | 3. Reveal and Post-Reveal | 0/TBD | Not started | - |
 | 4. Polish and Launch | 0/TBD | Not started | - |
