@@ -21,18 +21,18 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Reveal
 
 - [x] **REVL-01**: When all non-chadcluff cards are dismissed, dramatic reveal sequence begins
-- [ ] **REVL-02**: Remaining cards fly away in staggered exit animation
-- [ ] **REVL-03**: Deliberate pause between card exits and @chadcluff entrance
-- [ ] **REVL-04**: @chadcluff card grows into center stage with hero treatment
-- [ ] **REVL-05**: Confetti burst fires during reveal via canvas-confetti
-- [ ] **REVL-06**: Neon spotlight/glow effect highlights the hero card
+- [x] **REVL-02**: Remaining cards fly away in staggered exit animation
+- [x] **REVL-03**: Deliberate pause between card exits and @chadcluff entrance
+- [x] **REVL-04**: @chadcluff card grows into center stage with hero treatment
+- [x] **REVL-05**: Confetti burst fires during reveal via canvas-confetti
+- [x] **REVL-06**: Neon spotlight/glow effect highlights the hero card
 
 ### Post-Reveal
 
-- [ ] **POST-01**: Follow @chadcluff CTA button links to Twitter/X profile
-- [ ] **POST-02**: Share on X button generates pre-filled tweet via Web Intent
+- [x] **POST-01**: Follow @chadcluff CTA button links to Twitter/X profile
+- [x] **POST-02**: Share on X button generates pre-filled tweet via Web Intent
 - [x] **POST-03**: Replay button resets game and shuffles card order
-- [ ] **POST-04**: Witty bio/tagline section displays on the hero screen
+- [x] **POST-04**: Witty bio/tagline section displays on the hero screen
 
 ### Visual Design
 
@@ -100,15 +100,15 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CARD-07 | Phase 1 | Complete |
 | CARD-08 | Phase 1 | Complete |
 | REVL-01 | Phase 3 | Complete |
-| REVL-02 | Phase 3 | Pending |
-| REVL-03 | Phase 3 | Pending |
-| REVL-04 | Phase 3 | Pending |
-| REVL-05 | Phase 3 | Pending |
-| REVL-06 | Phase 3 | Pending |
-| POST-01 | Phase 3 | Pending |
-| POST-02 | Phase 3 | Pending |
+| REVL-02 | Phase 3 | Complete |
+| REVL-03 | Phase 3 | Complete |
+| REVL-04 | Phase 3 | Complete |
+| REVL-05 | Phase 3 | Complete |
+| REVL-06 | Phase 3 | Complete |
+| POST-01 | Phase 3 | Complete |
+| POST-02 | Phase 3 | Complete |
 | POST-03 | Phase 3 | Complete |
-| POST-04 | Phase 3 | Pending |
+| POST-04 | Phase 3 | Complete |
 | DESG-01 | Phase 1 | Complete |
 | DESG-02 | Phase 4 | Pending |
 | DESG-03 | Phase 4 | Pending |

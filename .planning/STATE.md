@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-16T02:12:16.387Z"
+stopped_at: Completed 03-02 tasks 0 and 1 — awaiting human-verify checkpoint for Task 2
+last_updated: "2026-03-16T02:15:33.281Z"
 last_activity: "2026-03-16 — Plan 02-03 complete: CardGrid integrated with AnimatePresence, full card-dismissal game verified by user"
 progress:
   total_phases: 4
-  completed_phases: 2
+  completed_phases: 3
   total_plans: 7
-  completed_plans: 6
+  completed_plans: 7
   percent: 50
 ---
 
@@ -54,6 +54,7 @@ Progress: [█████░░░░░] 50%
 | Phase 02-card-game-mechanics P02 | 5 | 2 tasks | 2 files |
 | Phase 02-card-game-mechanics P03 | 5 | 1 tasks | 2 files |
 | Phase 03-reveal-and-post-reveal P01 | 1 | 1 tasks | 4 files |
+| Phase 03-reveal-and-post-reveal P02 | 4 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -81,6 +82,8 @@ Recent decisions affecting current work:
 - [Phase 02-card-game-mechanics]: useCallback on handleDismiss in home.tsx ensures stable reference for React.memo CelebrityCard children
 - [Phase 03-reveal-and-post-reveal]: REPLAY case delegates entirely to initializeGame() — no duplication of init logic
 - [Phase 03-reveal-and-post-reveal]: canvas-confetti installed as runtime dep — fires in browser at reveal moment
+- [Phase 03-reveal-and-post-reveal]: revealReady state with 600ms setTimeout gates reveal mount for deliberate pause between browsing exit and reveal entrance
+- [Phase 03-reveal-and-post-reveal]: Confetti useEffect depends on revealReady (not state.phase) so it fires relative to reveal screen mounting, not phase change
 
 ### Pending Todos
 
@@ -92,6 +95,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-16T02:12:16.385Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-03-16T02:15:26.094Z
+Stopped at: Completed 03-02 tasks 0 and 1 — awaiting human-verify checkpoint for Task 2
 Resume file: None
