@@ -68,7 +68,7 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
       }}
       layout
       className={[
-        "relative overflow-hidden rounded-lg aspect-[3/4] bg-cyber-panel",
+        "relative overflow-hidden rounded-md aspect-[3/4] bg-cyber-panel",
         isMarked
           ? "shadow-[0_0_24px_rgba(255,0,0,0.6)] border-2 border-red-500"
           : [
@@ -97,11 +97,11 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
       )}
 
       {/* Card body */}
-      <div className="p-4 flex flex-col gap-1">
-        <p className="text-base font-bold text-cyber-text">{card.displayName}</p>
-        <p className="text-xs font-bold text-neon-cyan">{card.handle}</p>
-        <p className="text-sm text-cyber-text line-clamp-2">{card.bio}</p>
-        <p className="text-xs text-cyber-muted">{card.followerCount} followers</p>
+      <div className="p-2 flex flex-col gap-0.5">
+        <p className="text-xs font-bold text-cyber-text truncate">{card.displayName}</p>
+        <p className="text-[10px] font-bold text-neon-cyan">{card.handle}</p>
+        <p className="text-[10px] text-cyber-text line-clamp-1">{card.bio}</p>
+        <p className="text-[10px] text-cyber-muted">{card.followerCount}</p>
       </div>
 
       {/* Auto-dismiss mark overlay */}
@@ -113,10 +113,10 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
             exit={{ opacity: 0 }}
             className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center z-10"
           >
-            <span className="text-red-500 text-6xl font-bold drop-shadow-[0_0_12px_rgba(255,0,0,0.8)]">
+            <span className="text-red-500 text-3xl font-bold drop-shadow-[0_0_12px_rgba(255,0,0,0.8)]">
               ✗
             </span>
-            <span className="text-red-400 text-sm font-bold mt-2 uppercase tracking-wider">
+            <span className="text-red-400 text-[9px] font-bold mt-1 uppercase tracking-wider text-center px-1">
               Not a Twitter Celebrity
             </span>
           </motion.div>
