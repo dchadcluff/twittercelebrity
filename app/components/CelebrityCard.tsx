@@ -72,7 +72,7 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
         isMarked
           ? "shadow-[0_0_24px_rgba(255,0,0,0.6)] border-2 border-red-500"
           : [
-              "shadow-[0_0_8px_rgba(0,245,255,0.15)] hover:shadow-[0_0_16px_rgba(0,245,255,0.35)]",
+              "neon-glow-card",
               card.isChad
                 ? "border border-neon-yellow"
                 : "border border-neon-cyan/40 hover:border-neon-cyan",

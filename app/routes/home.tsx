@@ -1,4 +1,4 @@
-import { useReducer, useCallback, useEffect, useState } from "react";
+import React, { useReducer, useCallback, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import confetti from "canvas-confetti";
 import { gameReducer, initializeGame } from "../state/gameReducer";
@@ -119,7 +119,8 @@ export default function Home() {
                 y: 0,
                 transition: { delay: 0.8, duration: 0.6 },
               }}
-              className="text-2xl md:text-4xl font-bold text-neon-yellow mb-8 text-center tracking-wide drop-shadow-[0_0_20px_rgba(255,255,0,0.5)]"
+              className="text-2xl md:text-4xl font-bold text-neon-yellow mb-8 text-center tracking-wide drop-shadow-[0_0_20px_rgba(255,255,0,0.5)] glitch-text"
+              data-text="The TRUE Twitter Celebrity!"
             >
               The TRUE Twitter Celebrity!
             </motion.h2>
@@ -192,7 +193,8 @@ export default function Home() {
                 href="https://x.com/chadcluff"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-lg bg-neon-cyan text-cyber-black font-bold text-lg hover:shadow-[0_0_20px_rgba(0,245,255,0.5)] transition-shadow"
+                className="px-6 py-3 rounded-lg bg-neon-cyan text-cyber-black font-bold text-lg neon-glow-cta"
+                style={{ "--glow-color": "rgba(0, 245, 255, 0.5)" } as React.CSSProperties}
               >
                 Follow @chadcluff
               </a>
@@ -200,13 +202,15 @@ export default function Home() {
                 href={`https://x.com/intent/tweet?text=${encodeURIComponent("Think you know who the real Twitter Celebrity is? Find out \u2192 twittercelebrity.com")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 rounded-lg bg-neon-pink text-cyber-black font-bold text-lg hover:shadow-[0_0_20px_rgba(255,0,110,0.5)] transition-shadow"
+                className="px-6 py-3 rounded-lg bg-neon-pink text-cyber-black font-bold text-lg neon-glow-cta"
+                style={{ "--glow-color": "rgba(255, 0, 110, 0.5)" } as React.CSSProperties}
               >
                 Share on X
               </a>
               <button
                 onClick={() => dispatch({ type: "REPLAY" })}
-                className="px-6 py-3 rounded-lg border-2 border-neon-yellow text-neon-yellow font-bold text-lg hover:bg-neon-yellow hover:text-cyber-black transition-colors"
+                className="px-6 py-3 rounded-lg border-2 border-neon-yellow text-neon-yellow font-bold text-lg hover:bg-neon-yellow hover:text-cyber-black transition-colors neon-glow-cta"
+                style={{ "--glow-color": "rgba(245, 230, 66, 0.5)" } as React.CSSProperties}
               >
                 Play Again
               </button>
