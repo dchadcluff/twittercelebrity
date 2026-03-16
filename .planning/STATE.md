@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Completed 02-02-PLAN.md
-last_updated: "2026-03-16T01:21:00.093Z"
+stopped_at: "Checkpoint: Task 2 human-verify for 02-03-PLAN.md"
+last_updated: "2026-03-16T01:23:48.872Z"
 last_activity: "2026-03-16 — Plan 01-02 complete: RR7 SPA deployed to Cloudflare Pages, twittercelebrity.com live, SPA routing verified"
 progress:
   total_phases: 4
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
   percent: 25
 ---
 
@@ -52,6 +52,7 @@ Progress: [██░░░░░░░░] 25%
 *Updated after each plan completion*
 | Phase 02-card-game-mechanics P01 | 2 | 2 tasks | 7 files |
 | Phase 02-card-game-mechanics P02 | 5 | 2 tasks | 2 files |
+| Phase 02-card-game-mechanics P03 | 5 | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,8 @@ Recent decisions affecting current work:
 - [Phase 02-card-game-mechanics]: vitest environment set to jsdom globally — supports future React component tests
 - [Phase 02-card-game-mechanics]: Framer Motion layout+exit coexist on same motion.div in FM 12 without nested wrapper
 - [Phase 02-card-game-mechanics]: React.memo wraps CelebrityCard — prevents full list re-renders on each dismiss
+- [Phase 02-card-game-mechanics]: AnimatePresence mode=popLayout chosen for CardGrid — defers reflow until exit animation finishes, producing cleaner visual
+- [Phase 02-card-game-mechanics]: useCallback on handleDismiss in home.tsx ensures stable reference for React.memo CelebrityCard children
 
 ### Pending Todos
 
@@ -86,6 +89,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-16T01:21:00.091Z
-Stopped at: Completed 02-02-PLAN.md
+Last session: 2026-03-16T01:23:48.869Z
+Stopped at: Checkpoint: Task 2 human-verify for 02-03-PLAN.md
 Resume file: None

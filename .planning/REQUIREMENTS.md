@@ -39,7 +39,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **DESG-01**: Cyberpunk dark theme with neon color palette (cyan, pink, yellow)
 - [ ] **DESG-02**: CSS glitch effects on text and key elements
 - [ ] **DESG-03**: Neon glow box-shadows on cards and interactive elements
-- [ ] **DESG-04**: Responsive layout works on mobile and desktop
+- [x] **DESG-04**: Responsive layout works on mobile and desktop
 
 ### Infrastructure
 
@@ -112,7 +112,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DESG-01 | Phase 1 | Complete |
 | DESG-02 | Phase 4 | Pending |
 | DESG-03 | Phase 4 | Pending |
-| DESG-04 | Phase 2 | Pending |
+| DESG-04 | Phase 2 | Complete |
 | INFR-01 | Phase 1 | Complete |
 | INFR-02 | Phase 1 | Complete |
 | INFR-03 | Phase 1 | Complete |
