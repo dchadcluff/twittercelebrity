@@ -35,9 +35,9 @@ describe("gameReducer", () => {
 });
 
 describe("initializeGame", () => {
-  it("returns cards with chadcluff appended at end of cards array", () => {
+  it("places chadcluff as the 7th card (index 6)", () => {
     const state = initializeGame();
-    expect(state.cards[state.cards.length - 1].id).toBe("chadcluff");
+    expect(state.cards[6].id).toBe("chadcluff");
   });
 
   it("includes all 15 cards (14 celebrities + chadcluff)", () => {

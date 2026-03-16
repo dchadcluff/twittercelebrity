@@ -27,7 +27,12 @@ function shuffle<T>(arr: T[]): T[] {
 export function initializeGame(): GameState {
   return {
     phase: "browsing",
-    cards: [...shuffle(CELEBRITIES), CHADCLUFF],
+    cards: (() => {
+      const shuffled = shuffle(CELEBRITIES);
+      // Insert @chadcluff as the 7th card (index 6)
+      shuffled.splice(6, 0, CHADCLUFF);
+      return shuffled;
+    })(),
     dismissed: new Set<string>(),
   };
 }
