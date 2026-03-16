@@ -43,9 +43,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Infrastructure
 
-- [ ] **INFR-01**: React Router 7 SPA deployed to Cloudflare Pages
-- [ ] **INFR-02**: SPA routing works on direct URL access (/_redirects configured)
-- [ ] **INFR-03**: Site serves at twittercelebrity.com
+- [x] **INFR-01**: React Router 7 SPA deployed to Cloudflare Pages
+- [x] **INFR-02**: SPA routing works on direct URL access (/_redirects configured)
+- [x] **INFR-03**: Site serves at twittercelebrity.com
 
 ## v2 Requirements
 
@@ -113,9 +113,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | DESG-02 | Phase 4 | Pending |
 | DESG-03 | Phase 4 | Pending |
 | DESG-04 | Phase 2 | Pending |
-| INFR-01 | Phase 1 | Pending |
-| INFR-02 | Phase 1 | Pending |
-| INFR-03 | Phase 1 | Pending |
+| INFR-01 | Phase 1 | Complete |
+| INFR-02 | Phase 1 | Complete |
+| INFR-03 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 25 total
@@ -124,4 +124,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-03-15*
-*Last updated: 2026-03-15 after roadmap creation*
+*Last updated: 2026-03-16 after Plan 01-02 complete (INFR-01, INFR-02, INFR-03 complete)*

@@ -12,7 +12,7 @@ A greenfield static SPA delivering a cyberpunk card-game reveal experience. The 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Deploy a working skeleton to Cloudflare Pages and establish static celebrity data with local images and cyberpunk design tokens
+- [x] **Phase 1: Foundation** - Deploy a working skeleton to Cloudflare Pages and establish static celebrity data with local images and cyberpunk design tokens
 - [ ] **Phase 2: Card Game Mechanics** - Fully playable card-dismissal game with swipe/tap gestures, animations, and responsive cyberpunk card UI
 - [ ] **Phase 3: Reveal and Post-Reveal** - Dramatic three-act reveal animation, @chadcluff hero screen, and all post-reveal CTAs
 - [ ] **Phase 4: Polish and Launch** - CSS glitch effects, staggered entry animation, and final launch validation at twittercelebrity.com
@@ -31,8 +31,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold RR7 SPA, create celebrity data with local images, define cyberpunk design tokens, install Vitest validation tests
-- [ ] 01-02-PLAN.md — Deploy to Cloudflare Pages via GitHub, verify SPA routing on live domain, configure twittercelebrity.com custom domain
+- [x] 01-01-PLAN.md — Scaffold RR7 SPA, create celebrity data with local images, define cyberpunk design tokens, install Vitest validation tests
+- [x] 01-02-PLAN.md — Deploy to Cloudflare Pages via GitHub, verify SPA routing on live domain, configure twittercelebrity.com custom domain
 
 ### Phase 2: Card Game Mechanics
 **Goal**: A fully playable card-dismissal game where users can tap or swipe away all celebrity cards with fluid tactile feedback and cyberpunk card styling on both mobile and desktop
@@ -75,7 +75,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Planning complete | - |
+| 1. Foundation | 2/2 | Complete | 2026-03-16 |
 | 2. Card Game Mechanics | 0/TBD | Not started | - |
 | 3. Reveal and Post-Reveal | 0/TBD | Not started | - |
 | 4. Polish and Launch | 0/TBD | Not started | - |
