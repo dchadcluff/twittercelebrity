@@ -97,11 +97,11 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
       )}
 
       {/* Card body */}
-      <div className="p-2 flex flex-col gap-0.5">
-        <p className="text-xs font-bold text-cyber-text truncate">{card.displayName}</p>
-        <p className="text-[10px] font-bold text-neon-cyan">{card.handle}</p>
-        <p className="text-[10px] text-cyber-text line-clamp-1">{card.bio}</p>
-        <p className="text-[10px] text-cyber-muted">{card.followerCount}</p>
+      <div className="p-3 flex flex-col gap-1">
+        <p className="text-sm md:text-base font-bold text-cyber-text truncate">{card.displayName}</p>
+        <p className="text-xs md:text-sm font-bold text-neon-cyan">{card.handle}</p>
+        <p className="text-xs md:text-sm text-cyber-text line-clamp-2">{card.bio}</p>
+        <p className="text-xs text-cyber-muted">{card.followerCount}</p>
       </div>
 
       {/* Auto-dismiss mark overlay */}
