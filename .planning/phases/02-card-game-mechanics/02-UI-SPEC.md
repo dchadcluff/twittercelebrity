@@ -35,7 +35,7 @@ Declared values (multiples of 4 only):
 |-------|-------|-------|
 | xs | 4px | Icon gaps, inner card padding for small elements |
 | sm | 8px | Gap between card meta lines (handle → name → bio) |
-| md | 16px | Card internal padding, grid gap on mobile |
+| md | 16px | Card internal padding, grid gap on mobile, grid gap on tablet |
 | lg | 24px | Grid gap on desktop, header vertical padding |
 | xl | 32px | Page horizontal padding on desktop |
 | 2xl | 48px | Top clearance below sticky header |
@@ -54,13 +54,15 @@ Exceptions:
 | Role | Size | Weight | Line Height |
 |------|------|--------|-------------|
 | Body (bio snippet) | 14px | 400 (regular) | 1.5 |
-| Label (@handle, follower count) | 12px | 600 (semibold) | 1.2 |
-| Heading (display name on card) | 16px | 600 (semibold) | 1.2 |
+| Label (@handle, follower count) | 12px | 700 (bold) | 1.2 |
+| Heading (display name on card) | 16px | 700 (bold) | 1.2 |
 | Page title ("Twitter Celebrity") | 28px | 700 (bold) | 1.2 |
 
 Font family: `var(--font-cyber)` — Rajdhani with Orbitron as fallback for all text.
 
-**Source:** Derived from `app/routes/home.tsx` (uses `text-4xl font-bold text-neon-cyan`) + standard card hierarchy defaults. Page title already established in Phase 1 placeholder.
+Two weights only: 400 (regular) for body text, 700 (bold) for all labels, headings, and the page title.
+
+**Source:** Derived from `app/routes/home.tsx` (uses `text-4xl font-bold text-neon-cyan`) + standard card hierarchy defaults. Page title already established in Phase 1 placeholder. Semibold (600) consolidated to bold (700) per design contract constraint.
 
 ---
 
@@ -68,14 +70,16 @@ Font family: `var(--font-cyber)` — Rajdhani with Orbitron as fallback for all 
 
 | Role | Value | Usage |
 |------|-------|-------|
-| Dominant (60%) | `#0a0a0f` (`--color-cyber-black`) | Page background |
-| Secondary (30%) | `#1a1a2e` (`--color-cyber-panel`) | Card background |
-| Card surface alt | `#16213e` (`--color-cyber-surface`) | Card hover/drag state fill |
-| Accent — primary (10%) | `#00f5ff` (`--color-neon-cyan`) | Card border, @handle text, X button hover glow |
+| Dominant (60%) | `#0a0a0f` (`--color-cyber-black`) | Page background, sticky header background |
+| Secondary (30%) | `#1a1a2e` (`--color-cyber-panel`) | Card background (resting state) |
+| Supporting surface | `#16213e` (`--color-cyber-surface`) | Card hover/drag state fill — a mid-point between secondary and dominant; counted within the 30% secondary allocation |
+| Accent — primary (10%) | `#00f5ff` (`--color-neon-cyan`) | Card border, @handle text, X button hover glow, page title |
 | Accent — secondary | `#ff006e` (`--color-neon-pink`) | X button icon color, dismiss animation trail |
 | Text primary | `#e2e8f0` (`--color-cyber-text`) | Display name, bio snippet |
 | Text muted | `#94a3b8` (`--color-cyber-muted`) | Follower count, hint instruction text |
 | Destructive | `#ff006e` (`--color-neon-pink`) | Card dismiss X button (dismissal is the only "destructive" action in this phase) |
+
+`cyber-surface` (`#16213e`) is a supporting surface variant within the secondary (30%) allocation. It applies only during card hover and drag states, replacing `cyber-panel` temporarily. It does not represent a fourth color role — it occupies the same 30% bucket as `cyber-panel`.
 
 Accent reserved for:
 1. Card border (1px neon-cyan solid, `box-shadow` glow on hover)
@@ -91,13 +95,19 @@ Neon-pink reserved for:
 
 ---
 
+## Page Focal Point
+
+The primary visual anchor of the page is the **card grid itself** — specifically the neon-cyan glowing card borders against the `cyber-black` background. On page load, the staggered card entry animation draws the eye from top-left to bottom-right across the grid. The sticky header ("Twitter Celebrity" in neon-cyan, 28px bold) serves as the secondary anchor, orienting the user before the cards animate in. No hero images, banners, or decorative elements compete for attention — the cards are the entire visual payload.
+
+---
+
 ## Component Inventory
 
 Components to be built in this phase:
 
 ### `<CardGrid />`
-- CSS grid: `grid-cols-2` on mobile (375px+), `grid-cols-4` on desktop (1280px+)
-- Grid gap: `md` (16px) on mobile, `lg` (24px) on desktop
+- CSS grid: `grid-cols-2` on mobile (375px+), `grid-cols-3` on tablet (768px+), `grid-cols-4` on desktop (1280px+)
+- Grid gap: `md` (16px) on mobile and tablet, `lg` (24px) on desktop
 - AnimatePresence wraps the grid so dismissed cards animate out and remaining cards reflow with Framer Motion layout animation
 - Background: `cyber-black`
 
@@ -115,10 +125,10 @@ Components to be built in this phase:
 Layout inside card (top to bottom):
 1. Profile photo — full-width, top-aligned, 60% of card height, `object-cover`
 2. Card body — remaining 40% of card height, `padding: md` (16px)
-   - Display name — 16px, semibold, `cyber-text`
-   - @handle — 12px, semibold, `neon-cyan`
-   - Bio snippet — 14px, regular, `cyber-text`, max 2 lines, `line-clamp-2`
-   - Follower count — 12px, regular, `cyber-muted`
+   - Display name — 16px, bold (700), `cyber-text`
+   - @handle — 12px, bold (700), `neon-cyan`
+   - Bio snippet — 14px, regular (400), `cyber-text`, max 2 lines, `line-clamp-2`
+   - Follower count — 12px, regular (400), `cyber-muted`
 
 ### `<DismissButton />`
 - Position: absolute top-right corner of card — `top: 8px; right: 8px`
@@ -133,12 +143,12 @@ Layout inside card (top to bottom):
 - `position: sticky; top: 0; z-index: 50`
 - Background: `cyber-black` with `backdrop-blur` (so cards visible scrolling behind)
 - Height: 48px
-- Content: "Twitter Celebrity" — 28px, bold, `neon-cyan`, centered
+- Content: "Twitter Celebrity" — 28px, bold (700), `neon-cyan`, centered
 - Bottom border: 1px solid `neon-cyan` at 20% opacity
 
 ### `<InstructionHint />`
 - Positioned: centered below header, above grid
-- Text: "Tap × to eliminate" — 12px, regular, `cyber-muted`
+- Text: "Tap × to eliminate" — 12px, regular (400), `cyber-muted`
 - Animation: fade in on mount, fade out after first card dismiss or after 4 seconds, whichever comes first
 - Does not re-appear after fade
 
@@ -186,9 +196,11 @@ Layout inside card (top to bottom):
 
 | Breakpoint | Layout |
 |------------|--------|
-| 375px (mobile) | 2-column grid, `gap-4` (16px), card padding `p-3` (12px) |
-| 768px (tablet) | 3-column grid, `gap-5` (20px), card padding `p-4` (16px) |
+| 375px (mobile) | 2-column grid, `gap-4` (16px), card padding `p-4` (16px) |
+| 768px (tablet) | 3-column grid, `gap-4` (16px), card padding `p-4` (16px) |
 | 1280px (desktop) | 4-column grid, `gap-6` (24px), card padding `p-4` (16px) |
+
+All gap and padding values are drawn from the declared spacing scale. No off-scale values (`p-3`/12px or `gap-5`/20px) are used.
 
 **Source:** CONTEXT.md — "4 columns on desktop, 2 columns on mobile" (locked decision).
 
