@@ -64,8 +64,8 @@ Plans:
 **Plans:** 2/2 plans complete
 
 Plans:
-- [ ] 03-01-PLAN.md — Install canvas-confetti, implement REPLAY action in gameReducer, create unit tests for reveal transition and replay
-- [ ] 03-02-PLAN.md — Enhance reveal screen with confetti burst, Share/Replay CTAs, animated neon glow, and witty bio/tagline
+- [x] 03-01-PLAN.md — Install canvas-confetti, implement REPLAY action in gameReducer, create unit tests for reveal transition and replay
+- [x] 03-02-PLAN.md — Enhance reveal screen with confetti burst, Share/Replay CTAs, animated neon glow, and witty bio/tagline
 
 ### Phase 4: Polish and Launch
 **Goal**: Cyberpunk glitch effects layered onto the experience and a full launch validation confirming the site is live, correct, and visually complete at twittercelebrity.com
@@ -75,7 +75,11 @@ Plans:
   1. CSS glitch effects are visible on key text elements and activate during the reveal sequence
   2. Cards and interactive elements display neon glow box-shadows consistent with the cyberpunk design language
   3. The live site at twittercelebrity.com passes a full playthrough: all cards dismiss, reveal fires correctly, post-reveal screen appears, and Share/Follow/Replay all work
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 04-01-PLAN.md — Add CSS glitch keyframes and neon glow utilities, apply to StickyHeader, CelebrityCard, and reveal screen
+- [ ] 04-02-PLAN.md — Deploy to production and full launch validation at twittercelebrity.com
 
 ## Progress
 
@@ -87,4 +91,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
 | 2. Card Game Mechanics | 3/3 | Complete    | 2026-03-16 |
 | 3. Reveal and Post-Reveal | 2/2 | Complete    | 2026-03-16 |
-| 4. Polish and Launch | 0/TBD | Not started | - |
+| 4. Polish and Launch | 0/2 | Planning complete | - |
