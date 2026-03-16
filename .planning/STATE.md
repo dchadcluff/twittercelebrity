@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-03-15T23:37:58.386Z"
-last_activity: 2026-03-15 — Roadmap created, all 25 v1 requirements mapped to 4 phases
+status: in-progress
+stopped_at: Completed 01-foundation/01-01-PLAN.md
+last_updated: "2026-03-15T17:59:00.000Z"
+last_activity: 2026-03-15 — Plan 01-01 complete (foundation scaffold, celebrity data, Vitest tests)
 progress:
   total_phases: 4
   completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
-  percent: 0
+  total_plans: 2
+  completed_plans: 1
+  percent: 13
 ---
 
 # Project State
@@ -21,32 +21,32 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-15)
 
 **Core value:** The reveal moment — when all other celebrities are dismissed and @chadcluff dramatically takes center stage — must feel like an event.
-**Current focus:** Phase 1: Foundation
+**Current focus:** Phase 1: Foundation — Plan 02 (deploy to Cloudflare Pages)
 
 ## Current Position
 
 Phase: 1 of 4 (Foundation)
-Plan: 0 of TBD in current phase
-Status: Ready to plan
-Last activity: 2026-03-15 — Roadmap created, all 25 v1 requirements mapped to 4 phases
+Plan: 1 of 2 in current phase (01-01 complete, 01-02 next)
+Status: In progress
+Last activity: 2026-03-15 — Plan 01-01 complete: RR7 SPA scaffolded, celebrity data, Vitest tests passing
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 13%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 4 min
+- Total execution time: 0.07 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 01-foundation | 1/2 | 4 min | 4 min |
 
 **Recent Trend:**
-- Last 5 plans: —
+- Last 5 plans: 01-01 (4 min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -63,17 +63,20 @@ Recent decisions affecting current work:
 - Animation: Framer Motion 12 for all gestures and orchestration; canvas-confetti for reveal burst
 - Styling: Tailwind CSS v4 CSS-first with `@theme` cyberpunk neon tokens
 - Critical pitfall: Deploy skeleton in Phase 1 to catch SPA routing misconfiguration before feature work
+- HydrateFallback requires `<Scripts />` in RR7 SPA mode — build fails without it (discovered in Plan 01-01)
+- Placeholder JPEGs generated programmatically — real celebrity photos to be swapped before deployment
 
 ### Pending Todos
 
-None yet.
+None.
 
 ### Blockers/Concerns
 
-- Monitor GitHub Discussion #12998 (`@react-router/cloudflare` Vite plugin SPA mode conflict) — confirmed workaround is `ssr: false` without the plugin for static deploys
+- GitHub Discussion #12998 (`@react-router/cloudflare` Vite plugin SPA mode conflict) — resolved: using `ssr: false` without plugin confirmed working
+- Real celebrity profile photos need to be sourced and committed before deploy (currently using placeholder JPEGs)
 
 ## Session Continuity
 
-Last session: 2026-03-15T23:37:58.382Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-foundation/01-CONTEXT.md
+Last session: 2026-03-15T17:59:00.000Z
+Stopped at: Completed 01-foundation/01-01-PLAN.md
+Resume file: .planning/phases/01-foundation/01-02-PLAN.md

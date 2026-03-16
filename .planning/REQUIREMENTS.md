@@ -15,8 +15,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **CARD-04**: User can dismiss a card by swiping it away on touch devices
 - [ ] **CARD-05**: Cards tilt during swipe drag for tactile feedback
 - [ ] **CARD-06**: Cards animate in with staggered entry on page load
-- [ ] **CARD-07**: Celebrity mix includes Elon Musk, entertainers, and athletes — no political figures
-- [ ] **CARD-08**: Celebrity data is hardcoded with local images (not CDN hotlinks)
+- [x] **CARD-07**: Celebrity mix includes Elon Musk, entertainers, and athletes — no political figures
+- [x] **CARD-08**: Celebrity data is hardcoded with local images (not CDN hotlinks)
 
 ### Reveal
 
@@ -36,7 +36,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Visual Design
 
-- [ ] **DESG-01**: Cyberpunk dark theme with neon color palette (cyan, pink, yellow)
+- [x] **DESG-01**: Cyberpunk dark theme with neon color palette (cyan, pink, yellow)
 - [ ] **DESG-02**: CSS glitch effects on text and key elements
 - [ ] **DESG-03**: Neon glow box-shadows on cards and interactive elements
 - [ ] **DESG-04**: Responsive layout works on mobile and desktop
@@ -97,8 +97,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CARD-04 | Phase 2 | Pending |
 | CARD-05 | Phase 2 | Pending |
 | CARD-06 | Phase 2 | Pending |
-| CARD-07 | Phase 1 | Pending |
-| CARD-08 | Phase 1 | Pending |
+| CARD-07 | Phase 1 | Complete |
+| CARD-08 | Phase 1 | Complete |
 | REVL-01 | Phase 3 | Pending |
 | REVL-02 | Phase 3 | Pending |
 | REVL-03 | Phase 3 | Pending |
@@ -109,7 +109,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | POST-02 | Phase 3 | Pending |
 | POST-03 | Phase 3 | Pending |
 | POST-04 | Phase 3 | Pending |
-| DESG-01 | Phase 1 | Pending |
+| DESG-01 | Phase 1 | Complete |
 | DESG-02 | Phase 4 | Pending |
 | DESG-03 | Phase 4 | Pending |
 | DESG-04 | Phase 2 | Pending |
