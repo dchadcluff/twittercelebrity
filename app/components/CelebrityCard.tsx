@@ -68,7 +68,7 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
       }}
       layout
       className={[
-        "relative overflow-hidden rounded-md aspect-[3/4] bg-cyber-panel",
+        "relative overflow-hidden rounded-md aspect-[3/4] bg-cyber-panel w-[calc(25%-6px)] md:w-[calc(20%-8px)] xl:w-[calc(12.5%-10px)]",
         isMarked
           ? "shadow-[0_0_24px_rgba(255,0,0,0.6)] border-2 border-red-500"
           : [

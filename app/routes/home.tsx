@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { gameReducer, initializeGame } from "../state/gameReducer";
 import { CardGrid } from "../components/CardGrid";
 import { StickyHeader } from "../components/StickyHeader";
-import { InstructionHint } from "../components/InstructionHint";
+// InstructionHint removed — not needed
 import { CHADCLUFF } from "../data/chadcluff";
 
 export default function Home() {
@@ -55,7 +55,6 @@ export default function Home() {
             className="flex flex-col items-center justify-center"
             style={{ minHeight: "calc(100vh - 80px)" }}
           >
-            <InstructionHint dismissCount={dismissCount} />
             <CardGrid
               cards={state.cards}
               dismissed={state.dismissed}
