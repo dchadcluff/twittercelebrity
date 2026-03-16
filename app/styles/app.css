@@ -95,6 +95,17 @@ body {
   box-shadow: 0 0 12px var(--glow-color), 0 0 30px var(--glow-color), 0 0 60px var(--glow-color);
 }
 
+/* ─── Footer link utility ──────────────────────────────────────── */
+
+.footer-link {
+  color: var(--color-cyber-muted);
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-neon-cyan);
+}
+
 /* ─── prefers-reduced-motion guard ──────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {

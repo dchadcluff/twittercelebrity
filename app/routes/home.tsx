@@ -81,7 +81,7 @@ export default function Home() {
   const dismissCount = state.dismissed.size;
 
   return (
-    <div className="min-h-screen bg-cyber-black font-cyber">
+    <div className="bg-cyber-black font-cyber">
       <StickyHeader />
 
       <AnimatePresence mode="wait">
@@ -90,7 +90,7 @@ export default function Home() {
             key="browsing"
             exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
             className="flex flex-col items-center justify-center"
-            style={{ minHeight: "calc(100vh - 80px)" }}
+            style={{ minHeight: "calc(100vh - 48px - 90px)" }}
           >
             <CardGrid
               cards={state.cards}
@@ -109,7 +109,7 @@ export default function Home() {
               transition: { delay: 0.5, duration: 0.8, ease: "easeOut" },
             }}
             className="flex flex-col items-center justify-center px-4"
-            style={{ minHeight: "calc(100vh - 80px)" }}
+            style={{ minHeight: "calc(100vh - 48px - 90px)" }}
           >
             {/* "The TRUE Twitter Celebrity!" title */}
             <motion.h2

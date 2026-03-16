@@ -1,4 +1,5 @@
 import { Outlet, Meta, Links, ScrollRestoration, Scripts } from "react-router";
+import { Footer } from "./components/Footer";
 import "./styles/app.css";
 
 export function HydrateFallback() {
@@ -30,8 +31,11 @@ export default function Root() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
+      <body className="flex flex-col min-h-screen">
+        <div className="flex-1">
+          <Outlet />
+        </div>
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>
