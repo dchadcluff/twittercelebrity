@@ -61,7 +61,11 @@ Plans:
   3. A confetti burst fires during the reveal (canvas-confetti, visible on both mobile and desktop)
   4. The post-reveal hero screen displays @chadcluff's card with witty bio/tagline, and the Follow CTA links to the correct Twitter/X profile URL
   5. The Share on X button opens a pre-filled tweet via Web Intent, and the Replay button resets the game and shuffles card order
-**Plans**: TBD
+**Plans:** 2 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Install canvas-confetti, implement REPLAY action in gameReducer, create unit tests for reveal transition and replay
+- [ ] 03-02-PLAN.md — Enhance reveal screen with confetti burst, Share/Replay CTAs, animated neon glow, and witty bio/tagline
 
 ### Phase 4: Polish and Launch
 **Goal**: Cyberpunk glitch effects layered onto the experience and a full launch validation confirming the site is live, correct, and visually complete at twittercelebrity.com
@@ -82,5 +86,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
 | 2. Card Game Mechanics | 3/3 | Complete    | 2026-03-16 |
-| 3. Reveal and Post-Reveal | 0/TBD | Not started | - |
+| 3. Reveal and Post-Reveal | 0/2 | In progress | - |
 | 4. Polish and Launch | 0/TBD | Not started | - |
