@@ -5,9 +5,10 @@ import { CELEBRITIES } from "../../data/celebrities";
 describe("gameReducer", () => {
   it("DISMISS_CARD removes card from dismissed set — dismissed.has(id) === true after dispatch", () => {
     const state = initializeGame();
-    const cardId = CELEBRITIES[0].id;
-    const next = gameReducer(state, { type: "DISMISS_CARD", id: cardId });
-    expect(next.dismissed.has(cardId)).toBe(true);
+    // Pick a non-chad card that's actually in the random selection
+    const nonChad = state.cards.find((c) => !c.isChad)!;
+    const next = gameReducer(state, { type: "DISMISS_CARD", id: nonChad.id });
+    expect(next.dismissed.has(nonChad.id)).toBe(true);
   });
 
   it("DISMISS_CARD for isChad card is ignored — dismissed set unchanged", () => {
@@ -16,33 +17,37 @@ describe("gameReducer", () => {
     expect(next.dismissed.size).toBe(0);
   });
 
-  it("Phase transitions to 'reveal' when all 14 non-chad cards are dismissed", () => {
+  it("Phase transitions to 'reveal' when all 6 non-chad cards are dismissed", () => {
     let state = initializeGame();
-    for (const celebrity of CELEBRITIES) {
-      state = gameReducer(state, { type: "DISMISS_CARD", id: celebrity.id });
+    const nonChad = state.cards.filter((c) => !c.isChad);
+    for (const card of nonChad) {
+      state = gameReducer(state, { type: "DISMISS_CARD", id: card.id });
     }
     expect(state.phase).toBe("reveal");
   });
 
   it("Phase stays 'browsing' when only some non-chad cards are dismissed", () => {
     let state = initializeGame();
-    // Dismiss only 5 cards
-    for (let i = 0; i < 5; i++) {
-      state = gameReducer(state, { type: "DISMISS_CARD", id: CELEBRITIES[i].id });
+    const nonChad = state.cards.filter((c) => !c.isChad);
+    // Dismiss only 3 cards
+    for (let i = 0; i < 3; i++) {
+      state = gameReducer(state, { type: "DISMISS_CARD", id: nonChad[i].id });
     }
     expect(state.phase).toBe("browsing");
   });
 });
 
 describe("initializeGame", () => {
-  it("places chadcluff as the 7th card (index 6)", () => {
+  it("places chadcluff as the 4th card (index 3)", () => {
     const state = initializeGame();
-    expect(state.cards[6].id).toBe("chadcluff");
+    expect(state.cards[3].id).toBe("chadcluff");
   });
 
-  it("includes all 15 cards (14 celebrities + chadcluff)", () => {
+  it("includes 7 cards (6 random celebrities + chadcluff)", () => {
     const state = initializeGame();
-    expect(state.cards.length).toBe(15);
+    expect(state.cards.length).toBe(7);
+    expect(state.cards.filter((c) => c.isChad).length).toBe(1);
+    expect(state.cards.filter((c) => !c.isChad).length).toBe(6);
   });
 
   it("dismissed set starts empty", () => {

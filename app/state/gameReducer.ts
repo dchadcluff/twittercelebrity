@@ -28,10 +28,11 @@ export function initializeGame(): GameState {
   return {
     phase: "browsing",
     cards: (() => {
-      const shuffled = shuffle(CELEBRITIES);
-      // Insert @chadcluff as the 7th card (index 6)
-      shuffled.splice(6, 0, CHADCLUFF);
-      return shuffled;
+      // Pick 6 random celebrities from the full roster
+      const picked = shuffle(CELEBRITIES).slice(0, 6);
+      // Insert @chadcluff at position 4 (index 3)
+      picked.splice(3, 0, CHADCLUFF);
+      return picked;
     })(),
     dismissed: new Set<string>(),
   };
