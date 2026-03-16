@@ -44,7 +44,12 @@ Plans:
   3. Swiping a card on a touch device (tested on real iOS or Android) dismisses it; the card tilts during drag providing tactile feedback
   4. Cards animate in with a staggered entry on page load (not all appearing simultaneously)
   5. The layout is usable and visually correct at both 375px mobile width and 1280px desktop width
-**Plans**: TBD
+**Plans:** 3 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — Install framer-motion, create game state reducer with tests, build StickyHeader and InstructionHint components
+- [ ] 02-02-PLAN.md — Build CelebrityCard and DismissButton with drag/tilt/dismiss mechanics and exit animations
+- [ ] 02-03-PLAN.md — Wire CardGrid with AnimatePresence, integrate all components in home.tsx, visual checkpoint
 
 ### Phase 3: Reveal and Post-Reveal
 **Goal**: The emotional payoff — when the last celebrity card is dismissed, a cinematic three-act sequence plays and @chadcluff takes center stage with a hero screen offering Follow, Share, and Replay actions
@@ -76,6 +81,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
-| 2. Card Game Mechanics | 0/TBD | Not started | - |
+| 2. Card Game Mechanics | 0/3 | Not started | - |
 | 3. Reveal and Post-Reveal | 0/TBD | Not started | - |
 | 4. Polish and Launch | 0/TBD | Not started | - |
