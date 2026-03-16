@@ -9,12 +9,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Card Game
 
-- [ ] **CARD-01**: User sees a grid of ~15-20 celebrity cards on page load
+- [x] **CARD-01**: User sees a grid of ~15-20 celebrity cards on page load
 - [ ] **CARD-02**: Each card displays profile photo, @handle, display name, bio snippet, and follower count
 - [ ] **CARD-03**: User can dismiss a card by tapping the X button in the corner
 - [ ] **CARD-04**: User can dismiss a card by swiping it away on touch devices
 - [ ] **CARD-05**: Cards tilt during swipe drag for tactile feedback
-- [ ] **CARD-06**: Cards animate in with staggered entry on page load
+- [x] **CARD-06**: Cards animate in with staggered entry on page load
 - [x] **CARD-07**: Celebrity mix includes Elon Musk, entertainers, and athletes — no political figures
 - [x] **CARD-08**: Celebrity data is hardcoded with local images (not CDN hotlinks)
 
@@ -91,12 +91,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CARD-01 | Phase 2 | Pending |
+| CARD-01 | Phase 2 | Complete |
 | CARD-02 | Phase 2 | Pending |
 | CARD-03 | Phase 2 | Pending |
 | CARD-04 | Phase 2 | Pending |
 | CARD-05 | Phase 2 | Pending |
-| CARD-06 | Phase 2 | Pending |
+| CARD-06 | Phase 2 | Complete |
 | CARD-07 | Phase 1 | Complete |
 | CARD-08 | Phase 1 | Complete |
 | REVL-01 | Phase 3 | Pending |

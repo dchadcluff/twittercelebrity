@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 2 UI-SPEC approved
-last_updated: "2026-03-16T00:59:48.828Z"
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-16T01:17:52.983Z"
 last_activity: "2026-03-16 — Plan 01-02 complete: RR7 SPA deployed to Cloudflare Pages, twittercelebrity.com live, SPA routing verified"
 progress:
   total_phases: 4
   completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
+  total_plans: 5
+  completed_plans: 3
   percent: 25
 ---
 
@@ -50,6 +50,7 @@ Progress: [██░░░░░░░░] 25%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 02-card-game-mechanics P01 | 2 | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -68,6 +69,9 @@ Recent decisions affecting current work:
 - Cloudflare Pages git integration chosen over manual wrangler deploy — push to main auto-deploys, no CI config needed
 - Build output directory: build/client (RR7 SPA mode places client assets here)
 - Custom domain twittercelebrity.com configured via Cloudflare Pages dashboard DNS auto-config
+- [Phase 02-card-game-mechanics]: gameReducer uses Set<string> for dismissed IDs — O(1) lookup, immutable copy per action
+- [Phase 02-card-game-mechanics]: initializeGame places CHADCLUFF at end of shuffled array — guaranteed last position
+- [Phase 02-card-game-mechanics]: vitest environment set to jsdom globally — supports future React component tests
 
 ### Pending Todos
 
@@ -79,6 +83,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-03-16T00:59:48.825Z
-Stopped at: Phase 2 UI-SPEC approved
-Resume file: .planning/phases/02-card-game-mechanics/02-UI-SPEC.md
+Last session: 2026-03-16T01:17:52.981Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None
