@@ -70,7 +70,7 @@ Each task was committed atomically:
 
 1. **Task 1: Create CardGrid and wire home.tsx with full game** - `0c8518d` (feat)
 
-**Plan metadata:** pending final docs commit
+**Plan metadata:** `1308718` (docs: complete CardGrid integration plan)
 
 ## Files Created/Modified
 - `app/components/CardGrid.tsx` - AnimatePresence grid wrapper filtering dismissed cards, maps to CelebrityCard with stable key={card.id}

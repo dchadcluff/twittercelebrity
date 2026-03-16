@@ -13,7 +13,7 @@ A greenfield static SPA delivering a cyberpunk card-game reveal experience. The 
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Deploy a working skeleton to Cloudflare Pages and establish static celebrity data with local images and cyberpunk design tokens
-- [ ] **Phase 2: Card Game Mechanics** - Fully playable card-dismissal game with swipe/tap gestures, animations, and responsive cyberpunk card UI
+- [x] **Phase 2: Card Game Mechanics** - Fully playable card-dismissal game with swipe/tap gestures, animations, and responsive cyberpunk card UI (completed 2026-03-16)
 - [ ] **Phase 3: Reveal and Post-Reveal** - Dramatic three-act reveal animation, @chadcluff hero screen, and all post-reveal CTAs
 - [ ] **Phase 4: Polish and Launch** - CSS glitch effects, staggered entry animation, and final launch validation at twittercelebrity.com
 
@@ -44,12 +44,12 @@ Plans:
   3. Swiping a card on a touch device (tested on real iOS or Android) dismisses it; the card tilts during drag providing tactile feedback
   4. Cards animate in with a staggered entry on page load (not all appearing simultaneously)
   5. The layout is usable and visually correct at both 375px mobile width and 1280px desktop width
-**Plans:** 2/3 plans executed
+**Plans:** 3/3 plans complete
 
 Plans:
-- [ ] 02-01-PLAN.md — Install framer-motion, create game state reducer with tests, build StickyHeader and InstructionHint components
-- [ ] 02-02-PLAN.md — Build CelebrityCard and DismissButton with drag/tilt/dismiss mechanics and exit animations
-- [ ] 02-03-PLAN.md — Wire CardGrid with AnimatePresence, integrate all components in home.tsx, visual checkpoint
+- [x] 02-01-PLAN.md — Install framer-motion, create game state reducer with tests, build StickyHeader and InstructionHint components
+- [x] 02-02-PLAN.md — Build CelebrityCard and DismissButton with drag/tilt/dismiss mechanics and exit animations
+- [x] 02-03-PLAN.md — Wire CardGrid with AnimatePresence, integrate all components in home.tsx, visual checkpoint
 
 ### Phase 3: Reveal and Post-Reveal
 **Goal**: The emotional payoff — when the last celebrity card is dismissed, a cinematic three-act sequence plays and @chadcluff takes center stage with a hero screen offering Follow, Share, and Replay actions
@@ -81,6 +81,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
-| 2. Card Game Mechanics | 2/3 | In Progress|  |
+| 2. Card Game Mechanics | 3/3 | Complete   | 2026-03-16 |
 | 3. Reveal and Post-Reveal | 0/TBD | Not started | - |
 | 4. Polish and Launch | 0/TBD | Not started | - |
