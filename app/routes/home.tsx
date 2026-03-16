@@ -52,6 +52,8 @@ export default function Home() {
           <motion.div
             key="browsing"
             exit={{ opacity: 0, transition: { duration: 0.3 } }}
+            className="flex flex-col items-center justify-center"
+            style={{ minHeight: "calc(100vh - 80px)" }}
           >
             <InstructionHint dismissCount={dismissCount} />
             <CardGrid

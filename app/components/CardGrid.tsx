@@ -13,7 +13,7 @@ export function CardGrid({ cards, dismissed, markedId, onDismiss }: CardGridProp
   const visibleCards = cards.filter((c) => !dismissed.has(c.id));
 
   return (
-    <div className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-8 gap-2 xl:gap-3 p-2 xl:p-4 pt-2">
+    <div className="grid grid-cols-4 md:grid-cols-5 xl:grid-cols-8 gap-2 xl:gap-3 p-2 xl:p-4 pt-2 place-content-center">
       <AnimatePresence mode="popLayout">
         {visibleCards.map((card, idx) => (
           <CelebrityCardComponent
