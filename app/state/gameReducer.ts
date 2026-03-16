@@ -54,6 +54,8 @@ export function gameReducer(state: GameState, action: GameAction): GameState {
         nonChadRemaining.length === 0 ? "reveal" : "browsing";
       return { ...state, dismissed, phase };
     }
+    case "REPLAY":
+      return initializeGame();
     default:
       return state;
   }
