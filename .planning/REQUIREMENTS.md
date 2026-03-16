@@ -20,7 +20,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Reveal
 
-- [ ] **REVL-01**: When all non-chadcluff cards are dismissed, dramatic reveal sequence begins
+- [x] **REVL-01**: When all non-chadcluff cards are dismissed, dramatic reveal sequence begins
 - [ ] **REVL-02**: Remaining cards fly away in staggered exit animation
 - [ ] **REVL-03**: Deliberate pause between card exits and @chadcluff entrance
 - [ ] **REVL-04**: @chadcluff card grows into center stage with hero treatment
@@ -31,7 +31,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **POST-01**: Follow @chadcluff CTA button links to Twitter/X profile
 - [ ] **POST-02**: Share on X button generates pre-filled tweet via Web Intent
-- [ ] **POST-03**: Replay button resets game and shuffles card order
+- [x] **POST-03**: Replay button resets game and shuffles card order
 - [ ] **POST-04**: Witty bio/tagline section displays on the hero screen
 
 ### Visual Design
@@ -99,7 +99,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CARD-06 | Phase 2 | Complete |
 | CARD-07 | Phase 1 | Complete |
 | CARD-08 | Phase 1 | Complete |
-| REVL-01 | Phase 3 | Pending |
+| REVL-01 | Phase 3 | Complete |
 | REVL-02 | Phase 3 | Pending |
 | REVL-03 | Phase 3 | Pending |
 | REVL-04 | Phase 3 | Pending |
@@ -107,7 +107,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | REVL-06 | Phase 3 | Pending |
 | POST-01 | Phase 3 | Pending |
 | POST-02 | Phase 3 | Pending |
-| POST-03 | Phase 3 | Pending |
+| POST-03 | Phase 3 | Complete |
 | POST-04 | Phase 3 | Pending |
 | DESG-01 | Phase 1 | Complete |
 | DESG-02 | Phase 4 | Pending |
