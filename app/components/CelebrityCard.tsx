@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   motion,
+  AnimatePresence,
   useMotionValue,
   useTransform,
   type PanInfo,
@@ -11,6 +12,7 @@ import { DismissButton } from "./DismissButton";
 interface CelebrityCardProps {
   card: CelebrityCardType;
   index: number;
+  isMarked?: boolean;
   onDismiss: () => void;
 }
 
@@ -26,6 +28,7 @@ function getInitials(displayName: string): string {
 const CelebrityCardComponent = React.memo(function CelebrityCard({
   card,
   index,
+  isMarked = false,
   onDismiss,
 }: CelebrityCardProps) {
   const x = useMotionValue(0);
@@ -66,11 +69,15 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
       layout
       className={[
         "relative overflow-hidden rounded-lg aspect-[3/4] bg-cyber-panel",
-        "shadow-[0_0_8px_rgba(0,245,255,0.15)] hover:shadow-[0_0_16px_rgba(0,245,255,0.35)]",
+        isMarked
+          ? "shadow-[0_0_24px_rgba(255,0,0,0.6)] border-2 border-red-500"
+          : [
+              "shadow-[0_0_8px_rgba(0,245,255,0.15)] hover:shadow-[0_0_16px_rgba(0,245,255,0.35)]",
+              card.isChad
+                ? "border border-neon-yellow"
+                : "border border-neon-cyan/40 hover:border-neon-cyan",
+            ].join(" "),
         "transition-shadow duration-200 cursor-grab active:cursor-grabbing",
-        card.isChad
-          ? "border border-neon-yellow"
-          : "border border-neon-cyan/40 hover:border-neon-cyan",
       ].join(" ")}
     >
       {/* Profile photo */}
@@ -96,6 +103,25 @@ const CelebrityCardComponent = React.memo(function CelebrityCard({
         <p className="text-sm text-cyber-text line-clamp-2">{card.bio}</p>
         <p className="text-xs text-cyber-muted">{card.followerCount} followers</p>
       </div>
+
+      {/* Auto-dismiss mark overlay */}
+      <AnimatePresence>
+        {isMarked && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="absolute inset-0 bg-black/70 flex flex-col items-center justify-center z-10"
+          >
+            <span className="text-red-500 text-6xl font-bold drop-shadow-[0_0_12px_rgba(255,0,0,0.8)]">
+              ✗
+            </span>
+            <span className="text-red-400 text-sm font-bold mt-2 uppercase tracking-wider">
+              Not a Twitter Celebrity
+            </span>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Dismiss button (not shown for chad) */}
       {!card.isChad && <DismissButton onDismiss={onDismiss} />}

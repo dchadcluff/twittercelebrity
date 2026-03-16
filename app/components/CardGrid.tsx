@@ -5,10 +5,11 @@ import { CelebrityCard as CelebrityCardComponent } from "./CelebrityCard";
 interface CardGridProps {
   cards: CelebrityCard[];
   dismissed: Set<string>;
+  markedId: string | null;
   onDismiss: (id: string) => void;
 }
 
-export function CardGrid({ cards, dismissed, onDismiss }: CardGridProps) {
+export function CardGrid({ cards, dismissed, markedId, onDismiss }: CardGridProps) {
   const visibleCards = cards.filter((c) => !dismissed.has(c.id));
 
   return (
@@ -19,6 +20,7 @@ export function CardGrid({ cards, dismissed, onDismiss }: CardGridProps) {
             key={card.id}
             card={card}
             index={idx}
+            isMarked={card.id === markedId}
             onDismiss={() => onDismiss(card.id)}
           />
         ))}
